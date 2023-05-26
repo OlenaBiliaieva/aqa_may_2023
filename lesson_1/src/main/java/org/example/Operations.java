@@ -8,8 +8,8 @@ public class Operations {
 
         int sum = a + b;
         System.out.println(sum);
-//        System.out.println(a + b);
-//        System.out.println(10 + 12);
+        System.out.println(a + b);
+        System.out.println(10 + 12);
 
         int diff = a - b;
         System.out.println(diff);
