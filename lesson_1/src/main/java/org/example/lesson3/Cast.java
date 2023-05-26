@@ -1,11 +1,13 @@
-package org.example;
+package org.example.lesson3;
 
 public class Cast {
     public static void main(String[] args) {
+
         char a = 'a';
-        // Integers
+        //  Integers
         byte b = 126;
         short sh = 250;
+
         int i = 600;
         long l = 922337203685477806L;
         //pointed
@@ -21,7 +23,9 @@ public class Cast {
         double castFloatToDouble = f;
         float castDoubleToFloat = (float) d;
 
-        System.out.println(castFloatToInt);
+        int charToInteger = 'a';
+
+        System.out.println(charToInteger);
 
     }
 }

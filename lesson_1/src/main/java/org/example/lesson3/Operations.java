@@ -1,4 +1,4 @@
-package org.example;
+package org.example.lesson3;
 
 public class Operations {
 
@@ -20,7 +20,15 @@ public class Operations {
         float dev = (float) a / b;
         System.out.println(dev);
 
+        int c = 9;
+        int d = 2;
 
+        int result = c % d;
+
+
+        int g = 10;
+        System.out.println(g--);
+        System.out.println(--g);
     }
 
 }
