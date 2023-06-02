@@ -1,4 +1,4 @@
-package org.example.lesson3;
+package com.hillel.lesons.lesson3;
 
 public class AssigmentOperators {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package org.example.lesson3;
+package com.hillel.lesons.lesson3;
 
 public class Operations {
 
@@ -10,7 +10,6 @@ public class Operations {
         System.out.println(sum);
         System.out.println(a + b);
         System.out.println(10 + 12);
-
         int diff = a - b;
         System.out.println(diff);
 
@@ -22,9 +21,7 @@ public class Operations {
 
         int c = 9;
         int d = 2;
-
         int result = c % d;
-
 
         int g = 10;
         System.out.println(g--);

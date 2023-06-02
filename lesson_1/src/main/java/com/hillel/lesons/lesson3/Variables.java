@@ -1,8 +1,7 @@
-package org.example.lesson3;
+package com.hillel.lesons.lesson3;
 
 public class Variables {
     public static void main(String[] args) {
-
         //char
         char a = 'a';
         // Integers
