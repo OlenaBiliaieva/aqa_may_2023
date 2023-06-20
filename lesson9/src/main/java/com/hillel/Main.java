@@ -1,13 +1,12 @@
 package com.hillel;
 
-import java.util.Scanner;
+import com.hillel.strings.Cat;
 
 public class Main {
     public static void main(String[] args) {
         Cat cat = new Cat(7);
         Cat cat1 = new Cat(7);
         Cat cat2 = cat1;
-        cat1.name = "Bonia";
 
         String str = "Hello!";
         String str1 = "Hello!";

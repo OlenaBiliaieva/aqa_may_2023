@@ -1,4 +1,4 @@
-package com.hillel;
+package com.hillel.strings;
 
 public class MainStringF {
     public static void main(String[] args) {
