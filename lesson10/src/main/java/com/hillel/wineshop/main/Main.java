@@ -1,6 +1,6 @@
-package com.hillel.wineshop;
+package com.hillel.wineshop.main;
 
-import java.util.Arrays;
+import com.hillel.wineshop.wino.SparklingWine;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,9 +15,7 @@ public class Main {
 //
 //        Wine koblevo = new Wine(14,"Reisling","White",2013);
 
-        Gin gin = new Gin();
 
-        SparklingWine proseco = new SparklingWine(14,"Reisling","White",2013,"Itaila", "Dry");
-
+        SparklingWine proseco = new SparklingWine(14, "Reisling", "White", 2013, "Itaila", "Dry");
     }
 }

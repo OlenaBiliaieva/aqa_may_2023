@@ -1,9 +1,11 @@
-package com.hillel.wineshop;
+package com.hillel.wineshop.wino;
+
+import com.hillel.wineshop.abstractions.AlcoholBottle;
 
 public class Wine extends AlcoholBottle {
 
-    String color;
-    int yearOfProduction;
+    private String color;
+    private int yearOfProduction;
 
     public Wine(int alcoholPercent, String name, String color, int yearOfProduction) {
         super(alcoholPercent, name);
@@ -12,6 +14,5 @@ public class Wine extends AlcoholBottle {
     }
 
     public Wine() {
-
     }
 }
