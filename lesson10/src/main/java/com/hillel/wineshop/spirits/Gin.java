@@ -7,8 +7,8 @@ public class Gin extends AlcoholBottle {
     private String type;
     private String[] ingredients;
 
-    public Gin(int alcoholProponent, String name, int year, String type, String[] ingredients) {
-        super(alcoholProponent, name);
+    public Gin(int alcoholProponent, String name, int year, String type, String[] ingredients, int price) {
+        super(alcoholProponent, name, price);
         this.year = year;
         this.type = type;
         this.ingredients = ingredients;
@@ -24,5 +24,19 @@ public class Gin extends AlcoholBottle {
         } else {
             System.out.println("You are trying to set null");
         }
+    }
+
+    @Override
+    protected int calculatePrice() {
+        int price = ((getPrice() / 100) * 12) * (year);
+        setPrice(price);
+        return price;
+    }
+
+    @Override
+    public int calculatePrice(int procent) {
+        int price = getPrice() + ((getPrice() / 100) * procent) * (year);
+        setPrice(price);
+        return price;
     }
 }

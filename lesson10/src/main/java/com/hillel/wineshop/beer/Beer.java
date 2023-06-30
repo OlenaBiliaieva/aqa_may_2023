@@ -7,8 +7,8 @@ public class Beer extends AlcoholBottle {
     private boolean penka;
     private final static boolean BUBBLES_BEER = true;
 
-    public Beer(int alcoholPercent, String name, boolean penka) {
-        super(alcoholPercent, name);
+    public Beer(int alcoholPercent, String name, boolean penka, int price) {
+        super(alcoholPercent, name, price);
         setPenka(penka);
     }
 
@@ -27,4 +27,15 @@ public class Beer extends AlcoholBottle {
     public boolean getBubblesBeer() {
         return BUBBLES_BEER;
     }
+
+    @Override
+    public int calculatePrice() {
+        return this.getPrice();
+    }
+
+    @Override
+    public int calculatePrice(int procent) {
+        return this.getPrice();
+    }
+
 }

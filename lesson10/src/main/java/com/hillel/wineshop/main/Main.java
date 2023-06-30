@@ -1,6 +1,7 @@
 package com.hillel.wineshop.main;
 
 import com.hillel.wineshop.wino.SparklingWine;
+import com.hillel.wineshop.wino.Wine;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,7 +16,13 @@ public class Main {
 //
 //        Wine koblevo = new Wine(14,"Reisling","White",2013);
 
+        Wine wine = new Wine(14, "Reisling", "White", 2013, 18);
+        SparklingWine proseco = new SparklingWine(14, "Reisling", "White", 2013, "Itaila", "Dry", 18);
+        wine.printLabel();
+        proseco.printLabel();
+        System.out.println(proseco);
 
-        SparklingWine proseco = new SparklingWine(14, "Reisling", "White", 2013, "Itaila", "Dry");
+        proseco.calculatePrice();
+
     }
 }

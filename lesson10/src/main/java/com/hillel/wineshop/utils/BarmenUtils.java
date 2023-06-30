@@ -10,4 +10,6 @@ public class BarmenUtils {
     public static boolean isBarmenShakeBeer(Scanner scanner) {
         return scanner.nextBoolean();
     }
+
+
 }
