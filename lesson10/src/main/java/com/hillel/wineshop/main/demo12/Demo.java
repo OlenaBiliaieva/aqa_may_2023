@@ -1,12 +1,7 @@
-package com.hillel.wineshop.main;
+package com.hillel.wineshop.main.demo12;
 
-import com.hillel.wineshop.beer.Beer;
-import com.hillel.wineshop.constants.WineShopConstants;
 import com.hillel.wineshop.personal.Barmen;
 import com.hillel.wineshop.spirits.Gin;
-import com.hillel.wineshop.utils.BarmenUtils;
-
-import java.util.Scanner;
 
 public class Demo {
 

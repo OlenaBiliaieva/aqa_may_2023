@@ -1,4 +1,4 @@
-package com.hillel.wineshop.main;
+package com.hillel.wineshop.main.demo12;
 
 import com.hillel.wineshop.wino.SparklingWine;
 import com.hillel.wineshop.wino.Wine;

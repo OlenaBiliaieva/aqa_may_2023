@@ -27,7 +27,7 @@ public class Gin extends AlcoholBottle {
     }
 
     @Override
-    protected int calculatePrice() {
+    public int calculatePrice() {
         int price = ((getPrice() / 100) * 12) * (year);
         setPrice(price);
         return price;
@@ -38,5 +38,10 @@ public class Gin extends AlcoholBottle {
         int price = getPrice() + ((getPrice() / 100) * procent) * (year);
         setPrice(price);
         return price;
+    }
+
+    @Override
+    public void isFilled() {
+        System.out.println(getName() + " наливается : " + type);
     }
 }

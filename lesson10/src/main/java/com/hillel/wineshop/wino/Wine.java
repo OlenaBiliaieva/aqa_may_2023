@@ -33,4 +33,9 @@ public class Wine extends AlcoholBottle {
         setPrice(price);
         return price;
     }
+
+    @Override
+    public void isFilled() {
+        System.out.println(getName() + " наливается вино: " + color);
+    }
 }

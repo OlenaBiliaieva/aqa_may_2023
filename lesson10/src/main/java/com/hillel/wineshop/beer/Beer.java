@@ -38,4 +38,9 @@ public class Beer extends AlcoholBottle {
         return this.getPrice();
     }
 
+    @Override
+    public void isFilled() {
+        System.out.println(getName() + " наливается с пенкой: " + penka);
+    }
+
 }

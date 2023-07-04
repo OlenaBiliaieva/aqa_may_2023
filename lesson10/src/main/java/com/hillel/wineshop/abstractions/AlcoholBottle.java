@@ -1,6 +1,6 @@
 package com.hillel.wineshop.abstractions;
 
-public abstract class AlcoholBottle extends Object{
+public abstract class AlcoholBottle {
     private int alcoholPercent;
     private String name;
     private int price;
@@ -35,10 +35,11 @@ public abstract class AlcoholBottle extends Object{
         this.price = price;
     }
 
-    protected abstract int calculatePrice();
+    public abstract int calculatePrice();
 
     protected abstract int calculatePrice(int procent);
 
+    public abstract void isFilled();
 
     public void printLabel() {
         System.out.println(String.format("Name %s , Price %d", name, price));
