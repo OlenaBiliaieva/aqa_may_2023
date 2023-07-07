@@ -1,6 +1,7 @@
 package com.bosofthegym.core.trainings.abstractions;
 
 import com.bosofthegym.core.trainings.abstractions.core.Instructor;
+import com.bosofthegym.core.trainings.enums.Level;
 
 public abstract class Training implements CalculationCalories {
 
@@ -8,9 +9,12 @@ public abstract class Training implements CalculationCalories {
 
     private Instructor instructor;
 
-    public Training(int durationMin, Instructor instructor) {
+    private Level level;
+
+    public Training(int durationMin, Instructor instructor, Level level) {
         this.durationMin = durationMin;
         this.instructor = instructor;
+        this.level = level;
     }
 
     public int getDurationMin() {
@@ -21,4 +25,7 @@ public abstract class Training implements CalculationCalories {
         return instructor;
     }
 
+    public Level getLevel() {
+        return level;
+    }
 }

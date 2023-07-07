@@ -8,7 +8,7 @@ import java.util.List;
 
 public class User {
     private int id;
-    private List<CalculationCalories> trainings;
+    private Training[] trainings;
 
     private double summCalories;
 
@@ -19,7 +19,7 @@ public class User {
     public User(int id, double weight) {
         this.id = id;
         this.weight = weight;
-        this.trainings = new LinkedList<>();
+        this.trainings = new Training[20];
         this.summCalories = 0;
         index = 0;
     }
@@ -28,9 +28,9 @@ public class User {
         this.weight = weight;
     }
 
-    public void train(CalculationCalories training) {
+    public void train(Training training) {
         summCalories += summCalories + training.calculateCaloric(weight);
-        trainings.add(training);
+        trainings[index] = training;
         index++;
     }
 
@@ -38,7 +38,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", trainings=" + trainings
+                ", trainings=" + Arrays.toString(trainings)
                 + "\n" +
                 ", summCalories=" + summCalories +
                 ", weight=" + weight +
