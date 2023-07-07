@@ -1,12 +1,14 @@
 package com.hillel.wineshop.wino;
 
+import com.hillel.wineshop.enam.ColorOfWine;
+
 public final class SparklingWine extends Wine {
 
     private String region;
     private String type;
 
-    public SparklingWine(int alcoholPercent, String name, String color, int yearOfProduction, String region, String type, int price) {
-        super(alcoholPercent, name, color, yearOfProduction, price);
+    public SparklingWine(int alcoholPercent, String name, int price, ColorOfWine color, int yearOfProduction, String region, String type) {
+        super(alcoholPercent, name, price, color, yearOfProduction);
         this.region = region;
         this.type = type;
     }

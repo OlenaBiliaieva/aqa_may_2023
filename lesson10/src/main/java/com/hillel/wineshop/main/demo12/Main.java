@@ -1,5 +1,6 @@
 package com.hillel.wineshop.main.demo12;
 
+import com.hillel.wineshop.enam.ColorOfWine;
 import com.hillel.wineshop.wino.SparklingWine;
 import com.hillel.wineshop.wino.Wine;
 
@@ -16,8 +17,10 @@ public class Main {
 //
 //        Wine koblevo = new Wine(14,"Reisling","White",2013);
 
-        Wine wine = new Wine(14, "Reisling", "White", 2013, 18);
-        SparklingWine proseco = new SparklingWine(14, "Reisling", "White", 2013, "Itaila", "Dry", 18);
+        Wine wine = new Wine(14, "Reisling", 12, ColorOfWine.RED, 18);
+        Wine wine1 = new Wine(14, "Reisling", 12, ColorOfWine.RED, 18);
+        Wine wine3 = new Wine(14, "Reisling", 12, ColorOfWine.RED, 18);
+        SparklingWine proseco = new SparklingWine(14, "Reisling", 23, ColorOfWine.WHITE, 2022, "Italy", "dry");
         wine.printLabel();
         proseco.printLabel();
         System.out.println(proseco);
