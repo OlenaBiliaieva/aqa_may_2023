@@ -16,22 +16,22 @@ public class MainPerson {
                 new Person("Tola", 26),
                 new Person("Oleg", 24));
 
-//        personList.forEach(p -> System.out.println(p));
+        personList.forEach(p -> System.out.println(p));
 
-//        personList.stream()
-//                .filter(person -> person.getAge() > 24)
-//                .filter(person -> person.getName().startsWith("T"))
-//                .forEach(person -> System.out.println(person));
-//
-//        List<String> names = personList
-//                .stream()
-//                .map(p -> p.getName())
-//                .collect(Collectors.toList());
+        personList.stream()
+                .filter(person -> person.getAge() > 24)
+                .filter(person -> person.getName().startsWith("T"))
+                .forEach(person -> System.out.println(person));
 
-//        List<Person> people =  personList.stream()
-//                .filter(person -> person.getAge() > 24)
-//                .filter(person -> person.getName().startsWith("T"))
-//                .collect(Collectors.toList());
+        List<String> names = personList
+                .stream()
+                .map(p -> p.getName())
+                .collect(Collectors.toList());
+
+        List<Person> people =  personList.stream()
+                .filter(person -> person.getAge() > 24)
+                .filter(person -> person.getName().startsWith("T"))
+                .collect(Collectors.toList());
 
         Stream<Person> personStream = personList.stream()
                 .filter(person -> person.getAge() > 24)
@@ -48,6 +48,8 @@ public class MainPerson {
 
         boolean p2 = personList.stream()
                 .allMatch(person -> isMatch(person));
+
+
         System.out.println(p2);
     }
 
