@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="regression suit">
+
+    <test name="regression">
+
+        <groups>
+            <define name="regression"/>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.hillel.calc.CalculationTestPositive"/>
+            <class name="com.hillel.calc.CalculatorTest"/>
+        </classes>
+    </test>
+</suite>

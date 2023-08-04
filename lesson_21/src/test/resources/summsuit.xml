@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="testing sum for calculator">
+    <parameter name="parametr_1" value="Hello world"/>
+    <test name="test summ positive">
+
+        <classes>
+            <class name="com.hillel.calc.CalculationTestPositive"/>
+            <class name="com.hillel.calc.CalculatorTest"/>
+        </classes>
+    </test>
+</suite>

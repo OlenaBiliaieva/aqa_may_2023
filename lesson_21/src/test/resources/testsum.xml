@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="summ suit test methods">
+    <test name="sum test">
+        <classes>
+            <class name="com.hillel.calc.CalculatorTest">
+                <methods>
+                    <include name="summTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
