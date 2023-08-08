@@ -28,16 +28,22 @@ public class CalculatorTest {
         System.out.println("Before suite");
     }
 
-    @Test(groups = {"regression"})
+    @Test(groups = {"smoke"})
     public void summTest() {
         int a = 10;
         int b = 11;
         int result = calculator.summ(a, b);
-        Assert.assertEquals(result, 21);
+        Assert.assertEquals(result, 22);
         System.out.println("test1");
     }
 
-    @Test
+    @Test(dependsOnGroups = {"smoke", "regression"})
+    public void test1() {
+        System.out.println("after all regression");
+        Assert.assertEquals(1, 1);
+    }
+
+    @Test(groups = {"regression"})
     public void summTest1() {
         int a = 10;
         int b = 11;

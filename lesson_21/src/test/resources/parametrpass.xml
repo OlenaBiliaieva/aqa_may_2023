@@ -1,7 +1,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="testing with parametr">
+<suite name="testing with parametr" parallel="methods" thread-count="2">
+
     <parameter name="parametr_1" value="Hello world"/>
     <parameter name="int_parametr" value="10"/>
+
     <test name="test summ positive">
 
         <classes>

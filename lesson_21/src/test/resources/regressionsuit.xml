@@ -2,9 +2,7 @@
 <suite name="regression suit">
 
     <test name="regression">
-
         <groups>
-            <define name="regression"/>
             <run>
                 <include name="regression"/>
             </run>

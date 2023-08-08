@@ -1,7 +1,6 @@
 package com.hillel.calc;
 
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class CalculatorDataTest {
@@ -14,5 +13,4 @@ public class CalculatorDataTest {
         Assert.assertEquals(result, actualResult);
         System.out.println("test1");
     }
-
 }
