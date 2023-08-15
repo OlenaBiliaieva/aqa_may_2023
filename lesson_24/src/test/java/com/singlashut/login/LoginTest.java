@@ -58,8 +58,8 @@ public class LoginTest {
         driver.get("https://www.sunglasshut.com/uk/womens-sunglasses?facet=ads_f70083_ntk_cs%253A%2522Ray-Ban%2522");
 
         List<WebElement> webElement = driver.findElements(By.xpath("//div[@class='flex flex-col']/span"));
-        List<String> prices = webElement.stream().map(WebElement::getText).collect(Collectors.toList());
-        Assertions.assertTrue(prices.stream().allMatch(p -> p.contains("£")));
+        Assertions.assertTrue(webElement.stream().map(WebElement::getText)
+                .allMatch(p -> p.contains("£")));
     }
 
     @AfterAll
