@@ -1,0 +1,2 @@
+mvn clean test -DbrowserName="CHROME"
+mvn clean test -DbrowserName="EDGE" -DsuiteName=""
