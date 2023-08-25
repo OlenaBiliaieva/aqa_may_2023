@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 
 
 public class HeaderMenu extends AbstractPage {
-    private static final By LOGIN_ICON = By.xpath("");
+    private static final By LOGIN_ICON = By.xpath("//span[@title='My Account User Icon']");
 
     public HeaderMenu(WebDriver driver) {
         super(driver);
@@ -16,4 +16,5 @@ public class HeaderMenu extends AbstractPage {
     public WebElement getLoginIcon() {
         return driver.findElement(LOGIN_ICON);
     }
+
 }

@@ -1,12 +1,14 @@
 package com.hillel.paterns.pageobjectpatern.sunglashut.flows.login;
 
+import com.hillel.paterns.pageobjectpatern.sunglashut.flows.abstractflow.AbstractFlow;
 import com.hillel.paterns.pageobjectpatern.sunglashut.pages.login.LoginPage;
 import org.openqa.selenium.WebDriver;
 
-public class LoginFlow {
+public class LoginFlow extends AbstractFlow {
     private LoginPage loginPage;
 
     public LoginFlow(WebDriver webDriver) {
+        super(webDriver);
         this.loginPage = new LoginPage(webDriver);
     }
 
@@ -31,9 +33,5 @@ public class LoginFlow {
         fillEmail(email);
         fillPasword(password);
         submit();
-    }
-
-    public void navigateToRegistartionPage(){
-        loginPage.getREGISTER_BUTTON().click();
     }
 }

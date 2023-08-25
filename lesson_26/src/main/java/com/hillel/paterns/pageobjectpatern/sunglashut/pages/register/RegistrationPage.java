@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 public class RegistrationPage extends AbstractPage {
 
     private static final By PAGE_TILE = By.xpath("//div[@class='sgh-container-join']/div[1]");
+    private static final By EMAIL_FIELD = By.cssSelector("#join-input-email");
 
     public RegistrationPage(WebDriver driver) {
         super(driver);
@@ -17,4 +18,7 @@ public class RegistrationPage extends AbstractPage {
         return driver.findElement(PAGE_TILE);
     }
 
+    public WebElement getEMAIL_FIELD() {
+        return driver.findElement(EMAIL_FIELD);
+    }
 }

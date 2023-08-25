@@ -13,4 +13,8 @@ public class HeaderFlow {
     public void navigateToLogin() {
         headerMenu.getLoginIcon().click();
     }
+
+    public boolean isLoginButtonDisplayed() {
+        return headerMenu.getLoginIcon().isDisplayed();
+    }
 }

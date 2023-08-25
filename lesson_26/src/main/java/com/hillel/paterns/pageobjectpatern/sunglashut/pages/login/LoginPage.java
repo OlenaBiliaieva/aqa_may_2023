@@ -4,6 +4,10 @@ import com.hillel.paterns.pageobjectpatern.sunglashut.adstract.AbstractPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import static com.hillel.paterns.pageobjectpatern.sunglashut.utils.WaiterManager.waitUntilElementIsVisible;
 
 public class LoginPage extends AbstractPage {
 
@@ -18,11 +22,11 @@ public class LoginPage extends AbstractPage {
     }
 
     public WebElement getEMAIL_FILED() {
-        return driver.findElement(EMAIL_FILED);
+        return driverWait.until(ExpectedConditions.visibilityOfElementLocated(EMAIL_FILED));
     }
 
     public WebElement getPASSWORD_FILED() {
-        return driver.findElement(PASSWORD_FILED);
+        return waitUntilElementIsVisible(driver, PASSWORD_FILED);
     }
 
     public WebElement getLOGIN_BUTTON() {
